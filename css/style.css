@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+
+/* ========================================
+================ HEADER ================
+======================================== */
+header {
+    height: 100vh;
+    background: url('../img/h5-revolution-img-1.jpg');
+}
+
+.sectionHeader {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0px 15px;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.reseau a {
+    color: white;
+    margin: 0px 10px;
+}
+
+.logoHeader {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logoHeader img {
+    margin-top: 120px;
+}
+
+li a:hover, .reseau a:hover {
+    opacity: 0.8;
+}
+
+/* ================================================
+================ Body section citation ================
+================================================= */
+
+.citation {
+    height: 300px;
+    background-color: #c59d5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citation p {
+    width: 95%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
