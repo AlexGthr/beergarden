@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    vertical-align: top;
 }
 
 
@@ -69,6 +69,8 @@ li a {
 }
 
 .logoHeader img {
+    width: 750px;
+    height: 750px;
     margin-top: 120px;
 }
 
@@ -81,7 +83,7 @@ li a:hover, .reseau a:hover {
 ================================================= */
 
 .citation {
-    height: 300px;
+    height: 400px;
     background-color: #c59d5f;
     display: flex;
     justify-content: center;
@@ -89,7 +91,7 @@ li a:hover, .reseau a:hover {
 }
 
 .citation p {
-    width: 95%;
+    width: 93%;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -103,4 +105,129 @@ li a:hover, .reseau a:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+/* ================================================
+================ Body section traditions ================
+================================================= */
+
+.displayGrid {
+    display: grid;
+    grid-template-rows: repeat(2, 800px);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.texte {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    background: #c59d5f;
+    border-radius: 10px;
+    padding: 15px 60px;
+    transition: 0.5s;
+}
+
+.texte a:hover {
+    opacity: 0.8;
+}
+
+.logoUn, .logoDeux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoUn {
+    background: url('../img/h5-el-holder-img-1-1.jpg') center/cover no-repeat;
+}
+
+.logoDeux {
+    background: url('../img/h5-el-holder-img-2.jpg') center/cover no-repeat;
+}
+
+.box h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+
+.box h3 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.box p {
+    padding: 25px;
+    width: 85%;
+    font-family: 'Raleway', serif;
+    color: gray;
+    line-height: 1.6;
+
+}
+
+.galerie {
+    height: 445px;
+    display: flex;
+    overflow: hidden;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fondPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 150px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(197, 157, 95, 0);
+    z-index: 1;
+}
+
+.fondPlus i {
+    transition: opacity 0.5s;
+    transition: transform 1s;
+    opacity: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    z-index: 0;
+}
+
+.galerie .image:hover img {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.galerie .image:hover .fondPlus {
+    transition: 0.7s;
+    background-color: rgba(197, 157, 95, 0.7);
+    z-index: 1;
+}
+
+.galerie .image:hover i {
+    opacity: 1;
+    transform: rotate(90deg);
 }
