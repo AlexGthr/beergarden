@@ -176,6 +176,11 @@ li a:hover, .reseau a:hover {
 
 }
 
+
+/* ================================================
+================ Body section galerie ================
+================================================= */
+
 .galerie {
     height: 445px;
     display: flex;
@@ -230,4 +235,124 @@ li a:hover, .reseau a:hover {
 .galerie .image:hover i {
     opacity: 1;
     transform: rotate(90deg);
+}
+
+/* ================================================
+================ Body section services ================
+================================================= */
+
+.services {
+    padding: 80px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxServices {
+    width: 70%;
+    display: flex;
+    text-align: center;
+}
+
+.cardService h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.cardService p {
+    font-family: 'Raleway', serif;
+    color: gray;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.cardService img {
+    margin: 20px 20px;
+    filter: sepia(0%);
+    transition: 0.5s;
+}
+
+.cardService:hover img {
+    filter: sepia(100%);
+}
+
+.cardService:hover h2 {
+    color: #c59d5f;
+}
+
+
+.parallax {
+    background-image: url("../img/h5-parallax-img-2.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.parallax h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.parallax p {
+    font-family: 'Raleway', serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.maps {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maps iframe {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    filter: drop-shadow(.5em);
+}
+
+.customMaps {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Optionnel : ajoute des coins arrondis à la carte */
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
