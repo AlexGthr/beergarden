@@ -47,7 +47,6 @@ header h1 {
 }
 
 nav {
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -460,6 +459,11 @@ footer h1 {
         height: 100vh;
         width: 100vw;
         background: url('../img/h5-revolution-img-1.jpg') center/cover no-repeat;
+    }
+
+    .logoHeader img {
+        width: 90%;
+        height: 90%;
     }
 
     .logoHeader figure {
